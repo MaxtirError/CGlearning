@@ -1,0 +1,646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1B204B21-659C-3BF8-96D6-FED8C291768E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>MiniDraw_App</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MiniDraw_App.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MiniDraw_Appd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/bin</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MiniDraw_App.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MiniDraw_App</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/bin</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MiniDraw_App.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MiniDraw_App</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/bin</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MiniDraw_App.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MiniDraw_App</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/bin</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_Debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtWidgets" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtGui" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtANGLE" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtCore" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/./mkspecs/win32-msvc"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_Debug;D:\app\Qt5\5.15.2\msvc2019_64\include;D:\app\Qt5\5.15.2\msvc2019_64\include\QtWidgets;D:\app\Qt5\5.15.2\msvc2019_64\include\QtGui;D:\app\Qt5\5.15.2\msvc2019_64\include\QtANGLE;D:\app\Qt5\5.15.2\msvc2019_64\include\QtCore;D:\app\Qt5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_Debug;D:\app\Qt5\5.15.2\msvc2019_64\include;D:\app\Qt5\5.15.2\msvc2019_64\include\QtWidgets;D:\app\Qt5\5.15.2\msvc2019_64\include\QtGui;D:\app\Qt5\5.15.2\msvc2019_64\include\QtANGLE;D:\app\Qt5\5.15.2\msvc2019_64\include\QtCore;D:\app\Qt5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target MiniDraw_App</Message>
+      <Command>setlocal
+cd C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/MiniDraw_App_autogen/autouic_Debug.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\app\Qt5\5.15.2\msvc2019_64\lib\Qt5Widgetsd.lib;D:\app\Qt5\5.15.2\msvc2019_64\lib\Qt5Guid.lib;D:\app\Qt5\5.15.2\msvc2019_64\lib\Qt5Cored.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/lib/MiniDraw_Appd.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/bin/MiniDraw_Appd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_Release;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtWidgets" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtGui" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtANGLE" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtCore" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/./mkspecs/win32-msvc"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_Release;D:\app\Qt5\5.15.2\msvc2019_64\include;D:\app\Qt5\5.15.2\msvc2019_64\include\QtWidgets;D:\app\Qt5\5.15.2\msvc2019_64\include\QtGui;D:\app\Qt5\5.15.2\msvc2019_64\include\QtANGLE;D:\app\Qt5\5.15.2\msvc2019_64\include\QtCore;D:\app\Qt5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_Release;D:\app\Qt5\5.15.2\msvc2019_64\include;D:\app\Qt5\5.15.2\msvc2019_64\include\QtWidgets;D:\app\Qt5\5.15.2\msvc2019_64\include\QtGui;D:\app\Qt5\5.15.2\msvc2019_64\include\QtANGLE;D:\app\Qt5\5.15.2\msvc2019_64\include\QtCore;D:\app\Qt5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target MiniDraw_App</Message>
+      <Command>setlocal
+cd C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/MiniDraw_App_autogen/autouic_Release.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\app\Qt5\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;D:\app\Qt5\5.15.2\msvc2019_64\lib\Qt5Gui.lib;D:\app\Qt5\5.15.2\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/lib/MiniDraw_App.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/bin/MiniDraw_App.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_MinSizeRel;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtWidgets" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtGui" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtANGLE" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtCore" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/./mkspecs/win32-msvc"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_MinSizeRel;D:\app\Qt5\5.15.2\msvc2019_64\include;D:\app\Qt5\5.15.2\msvc2019_64\include\QtWidgets;D:\app\Qt5\5.15.2\msvc2019_64\include\QtGui;D:\app\Qt5\5.15.2\msvc2019_64\include\QtANGLE;D:\app\Qt5\5.15.2\msvc2019_64\include\QtCore;D:\app\Qt5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_MinSizeRel;D:\app\Qt5\5.15.2\msvc2019_64\include;D:\app\Qt5\5.15.2\msvc2019_64\include\QtWidgets;D:\app\Qt5\5.15.2\msvc2019_64\include\QtGui;D:\app\Qt5\5.15.2\msvc2019_64\include\QtANGLE;D:\app\Qt5\5.15.2\msvc2019_64\include\QtCore;D:\app\Qt5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target MiniDraw_App</Message>
+      <Command>setlocal
+cd C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/MiniDraw_App_autogen/autouic_MinSizeRel.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\app\Qt5\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;D:\app\Qt5\5.15.2\msvc2019_64\lib\Qt5Gui.lib;D:\app\Qt5\5.15.2\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/lib/MinSizeRel/MiniDraw_App.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/bin/MinSizeRel/MiniDraw_App.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_RelWithDebInfo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtWidgets" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtGui" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtANGLE" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/include/QtCore" /external:I "D:/app/Qt5/5.15.2/msvc2019_64/./mkspecs/win32-msvc"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_RelWithDebInfo;D:\app\Qt5\5.15.2\msvc2019_64\include;D:\app\Qt5\5.15.2\msvc2019_64\include\QtWidgets;D:\app\Qt5\5.15.2\msvc2019_64\include\QtGui;D:\app\Qt5\5.15.2\msvc2019_64\include\QtANGLE;D:\app\Qt5\5.15.2\msvc2019_64\include\QtCore;D:\app\Qt5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_RelWithDebInfo;D:\app\Qt5\5.15.2\msvc2019_64\include;D:\app\Qt5\5.15.2\msvc2019_64\include\QtWidgets;D:\app\Qt5\5.15.2\msvc2019_64\include\QtGui;D:\app\Qt5\5.15.2\msvc2019_64\include\QtANGLE;D:\app\Qt5\5.15.2\msvc2019_64\include\QtCore;D:\app\Qt5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target MiniDraw_App</Message>
+      <Command>setlocal
+cd C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/MiniDraw_App_autogen/autouic_RelWithDebInfo.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\app\Qt5\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;D:\app\Qt5\5.15.2\msvc2019_64\lib\Qt5Gui.lib;D:\app\Qt5\5.15.2\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/lib/RelWithDebInfo/MiniDraw_App.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/bin/RelWithDebInfo/MiniDraw_App.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\CMakeFiles\54b58ca8425c909ba9ac3552f0fb77ac\autouic_(CONFIG).stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.ui;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\viewwidget.ui;D:\app\Qt5\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_Debug.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.ui;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\viewwidget.ui;D:\app\Qt5\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_Release.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.ui;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\viewwidget.ui;D:\app\Qt5\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_MinSizeRel.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.ui;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\viewwidget.ui;D:\app\Qt5\5.15.2\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_RelWithDebInfo.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\CMakeFiles\2b62a07a1417b5606d715aa48982ef10\qrc_minidraw.cpp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for minidraw.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.qrc;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\CMakeFiles\MiniDraw_App_autogen.dir\AutoRcc_minidraw_EWIEGA46WW_Info.json;D:\app\Qt5\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\EWIEGA46WW\qrc_minidraw.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for minidraw.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.qrc;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\CMakeFiles\MiniDraw_App_autogen.dir\AutoRcc_minidraw_EWIEGA46WW_Info.json;D:\app\Qt5\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\EWIEGA46WW\qrc_minidraw.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for minidraw.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.qrc;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\CMakeFiles\MiniDraw_App_autogen.dir\AutoRcc_minidraw_EWIEGA46WW_Info.json;D:\app\Qt5\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\EWIEGA46WW\qrc_minidraw.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for minidraw.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.qrc;C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\CMakeFiles\MiniDraw_App_autogen.dir\AutoRcc_minidraw_EWIEGA46WW_Info.json;D:\app\Qt5\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\EWIEGA46WW\qrc_minidraw.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project -BC:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project --check-stamp-file C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project -BC:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project --check-stamp-file C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project -BC:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project --check-stamp-file C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project -BC:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project --check-stamp-file C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\Line.cpp" />
+    <ClCompile Include="Ellipse.cpp" />
+    <ClCompile Include="Polygon.cpp" />
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\Line.h" />
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\Rect.cpp" />
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\Rect.h" />
+    <ClInclude Include="Ellipse.h" />
+    <ClInclude Include="Polygon.h" />
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\cmake_install.cmake">
+    </None>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\main.cpp" />
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.cpp" />
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.h" />
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.qrc">
+    </None>
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.ui">
+    </None>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\shape.cpp" />
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\shape.h" />
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\viewwidget.cpp" />
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\viewwidget.h" />
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\viewwidget.ui">
+    </None>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_Debug\ui_minidraw.h" />
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_Debug\ui_viewwidget.h" />
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_Debug.stamp">
+    </None>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\EWIEGA46WW\qrc_minidraw.cpp" />
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_Release\ui_minidraw.h" />
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_Release\ui_viewwidget.h" />
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_Release.stamp">
+    </None>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_MinSizeRel\ui_minidraw.h" />
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_MinSizeRel\ui_viewwidget.h" />
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_MinSizeRel.stamp">
+    </None>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_RelWithDebInfo\ui_minidraw.h" />
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_RelWithDebInfo\ui_viewwidget.h" />
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_RelWithDebInfo.stamp">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\ZERO_CHECK.vcxproj">
+      <Project>{1D8D9EEB-BFFE-3FCC-97B1-11B176C927BD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

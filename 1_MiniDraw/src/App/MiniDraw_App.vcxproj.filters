@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\Line.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\Rect.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\main.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\shape.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\viewwidget.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\EWIEGA46WW\qrc_minidraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ellipse.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="Polygon.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\Line.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\Rect.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\shape.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\viewwidget.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_Debug\ui_minidraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_Debug\ui_viewwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_Release\ui_minidraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_Release\ui_viewwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_MinSizeRel\ui_minidraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_MinSizeRel\ui_viewwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_RelWithDebInfo\ui_minidraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_RelWithDebInfo\ui_viewwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ellipse.h">
+      <Filter>App</Filter>
+    </ClInclude>
+    <ClInclude Include="Polygon.h">
+      <Filter>App</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\CMakeFiles\54b58ca8425c909ba9ac3552f0fb77ac\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\CMakeFiles\2b62a07a1417b5606d715aa48982ef10\qrc_minidraw.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\cmake_install.cmake">
+      <Filter>App</Filter>
+    </None>
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.qrc">
+      <Filter>App</Filter>
+    </None>
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\minidraw.ui">
+      <Filter>App</Filter>
+    </None>
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\viewwidget.ui">
+      <Filter>App</Filter>
+    </None>
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_Debug.stamp" />
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_Release.stamp" />
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="App">
+      <UniqueIdentifier>{34B5FA97-3D90-3996-9552-5061A7E64011}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7D525862-F9FC-38B0-A371-F71A2C4AA96F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ADA14972-3F53-3A69-AC9B-D1BACD703843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{222E6EC0-DE64-37D8-8772-666C07ACCC93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,42 @@
+^C:\USERS\MAXTIR\DESKTOP\CG\USTC_CG\HOMEWORKS\1_MINIDRAW\PROJECT\CMAKEFILES\54B58CA8425C909BA9AC3552F0FB77AC\AUTOUIC_(CONFIG).STAMP.RULE
+setlocal
+cd C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MAXTIR\DESKTOP\CG\USTC_CG\HOMEWORKS\1_MINIDRAW\PROJECT\CMAKEFILES\2B62A07A1417B5606D715AA48982EF10\QRC_MINIDRAW.CPP.RULE
+setlocal
+cd C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autorcc C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/MiniDraw_App_autogen.dir/AutoRcc_minidraw_EWIEGA46WW_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\MAXTIR\DESKTOP\CG\USTC_CG\HOMEWORKS\1_MINIDRAW\PROJECT\SRC\APP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project -BC:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project --check-stamp-file C:/Users/maxtir/Desktop/CG/USTC_CG/Homeworks/1_MiniDraw/project/src/App/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
