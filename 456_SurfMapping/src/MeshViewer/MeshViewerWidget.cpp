@@ -13,7 +13,11 @@ MeshViewerWidget::MeshViewerWidget(QWidget* parent)
 	issimulated(false),
 	istetmode(false),
 	MappingTool(NULL),
-	timer(NULL)
+	timer(NULL),
+	simulator(NULL),
+	tetmesh(NULL),
+	mp_status(SurfMapping::MARAP),
+	bd_status(SurfMapping::BNormal)
 {
 }
 
@@ -50,7 +54,26 @@ bool MeshViewerWidget::LoadTet(const std::string& filename)
 
 void MeshViewerWidget::Clear(void)
 {
-	polyMesh->clear();
+	if (polyMesh != NULL) {
+		polyMesh->clear();
+		//polyMesh = NULL;
+	}
+	if (tetmesh != NULL) {
+		delete tetmesh;
+		tetmesh = NULL;
+	}
+	if (MappingTool != NULL) {
+		delete MappingTool;
+		MappingTool = NULL;
+	}
+	if (timer != NULL) {
+		delete timer;
+		timer = NULL;
+	}
+	if (simulator != NULL) {
+		delete simulator;
+		simulator = NULL;
+	}
 }
 
 void MeshViewerWidget::UpdateMesh(void)
@@ -438,7 +461,7 @@ void MeshViewerWidget::MiniSurf()
 	for (auto v : polyMesh->vertices())
 	{
 		Texcoord Position = v->getTextureUVW();
-		printf("%.2lf %.2lf %.2lf\n", Position[0], Position[1], Position[2]);
+		//printf("%.2lf %.2lf %.2lf\n", Position[0], Position[1], Position[2]);
 		v->setPosition(Position[0], Position[1], Position[2]);
 	}
 	update();
@@ -448,16 +471,23 @@ void MeshViewerWidget::TextureMapping()
 {
 	if (MappingTool == NULL)
 	{
-		//MappingTool = new BoundarySurfMap(polyMesh);
-		MappingTool = new ARAPMapping(polyMesh);
+		if (mp_status != SurfMapping::MARAP && mp_status != SurfMapping::MASAP)
+			MappingTool = new BoundarySurfMap(polyMesh);
+		else
+			MappingTool = new ARAPMapping(polyMesh);
+		MappingTool->SetBoundaryMode(bd_status);
+		MappingTool->SetMappingMode(mp_status);
 		MappingTool->Initialize();
+		MappingTool->Boundary_Mapping();
+		MappingTool->Parametrize();
+		if (mp_status == SurfMapping::MARAP)
+			MappingTool->LGAdjusting(10, 0.001);
 	}
-	MappingTool->Parametrize();
-	MappingTool->LGAdjusting(10, 0.001);
 }
 
 void MeshViewerWidget::SetBdNormal()
 {
+	bd_status = SurfMapping::BNormal;
 	if (MappingTool != NULL)
 	{
 		MappingTool->SetBoundaryMode(BoundarySurfMap::BNormal);
@@ -468,6 +498,7 @@ void MeshViewerWidget::SetBdNormal()
 
 void MeshViewerWidget::SetBdSquare()
 {
+	bd_status = SurfMapping::BSquare;
 	if (MappingTool != NULL)
 	{
 		MappingTool->SetBoundaryMode(BoundarySurfMap::BSquare);
@@ -478,6 +509,7 @@ void MeshViewerWidget::SetBdSquare()
 
 void MeshViewerWidget::SetBdCircle()
 {
+	bd_status = SurfMapping::BCircle;
 	if (MappingTool != NULL)
 	{
 		MappingTool->SetBoundaryMode(BoundarySurfMap::BCircle);
@@ -489,6 +521,7 @@ void MeshViewerWidget::SetBdCircle()
 
 void MeshViewerWidget::SetMpUniform()
 {
+	mp_status = SurfMapping::MUniform;
 	if (MappingTool != NULL)
 	{
 		MappingTool->SetMappingMode(BoundarySurfMap::MUniform);
@@ -499,6 +532,7 @@ void MeshViewerWidget::SetMpUniform()
 
 void MeshViewerWidget::SetMpCot()
 {
+	mp_status = SurfMapping::MCotan;
 	if (MappingTool != NULL)
 	{
 		MappingTool->SetMappingMode(BoundarySurfMap::MCotan);
@@ -506,26 +540,44 @@ void MeshViewerWidget::SetMpCot()
 	}
 }
 
+void MeshViewerWidget::SetMpASAP()
+{
+	mp_status = SurfMapping::MASAP;
+	if (MappingTool != NULL)
+	{
+		MappingTool->SetMappingMode(BoundarySurfMap::MASAP);
+		MappingTool->Parametrize();
+	}
+}
+
+
+void MeshViewerWidget::SetMpARAP()
+{
+	mp_status = SurfMapping::MARAP;
+	if (MappingTool != NULL)
+	{
+		MappingTool->SetMappingMode(BoundarySurfMap::MARAP);
+		MappingTool->Parametrize();
+		MappingTool->LGAdjusting(10, 0.001);
+	}
+}
+
 void MeshViewerWidget::Simulation()
 {
 	if (istetmode) {
 		LockPoints.clear();
-		double minx = 1e9;
+		double miny = 1e9;
 		const double* P = tetmesh->pointlist;
 		for (int i = 0; i < tetmesh->numberofpoints; ++i)
 		{
-			minx = std::min(minx, P[i * 3]);
+			miny = std::min(miny, P[i * 3]);
 		}
 
 		for (int i = 0; i < tetmesh->numberofpoints; ++i)
-		if(P[i * 3]< minx + 1e-9)
+		if(P[i * 3 + 1] < miny + 1e-9)
 		{
 			LockPoints.push_back(i);
 		}
-		puts("LockPoints");
-		for (auto x : LockPoints)
-			printf("%.2lf %.2lf %.2lf\n", P[x * 3], P[x * 3 + 1], P[x * 3 + 2]);
-		puts("");
 		simulator = new EnergySimulator();
 		simulator->Initialize_Tet(tetmesh, &LockPoints);
 		simulator->Analyze();

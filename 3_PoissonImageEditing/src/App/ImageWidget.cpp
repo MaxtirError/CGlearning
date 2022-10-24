@@ -147,7 +147,7 @@ void ImageWidget::mousePressEvent(QMouseEvent* mouseevent)
 				g_mask[p.rx()][p.ry()] = tim;
 				id[p.rx()][p.ry()] = counter++;
 			}
-			printf("%d %d\n", minx_, miny_);
+			//printf("%d %d\n", minx_, miny_);
 			Solver = new SparseSolver(counter);
 			counter = 0;
 			for (auto p : pointlist_)

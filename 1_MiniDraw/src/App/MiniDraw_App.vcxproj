@@ -631,6 +631,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\include_RelWithDebInfo\ui_viewwidget.h" />
     <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_RelWithDebInfo.stamp">
     </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram3.cd" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\ZERO_CHECK.vcxproj">

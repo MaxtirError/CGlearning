@@ -60,10 +60,14 @@ void CRBF::ImageTransfrom(QImage* ptr_image, QPoint start_pos)
 			cal(0, n + 1) = j;
 			cal(0, n + 2) = 1;
 			Target = cal * x;
-			auto bound = [](int x, int L, int R) {return x < L ? L : (x > R ? R : x); };
-			int X_target = bound(round(Target(0, 0)), 0, width - 1);
-			int Y_target = bound(round(Target(0, 1)), 0, height - 1);
-			ptr_image->setPixel(i, j, img_tmp.pixel(X_target, Y_target));
+
+			auto outbound = [](int x, int L, int R) {return x < L || x > R; };
+			int X_target = round(Target(0, 0));
+			int Y_target = round(Target(0, 1));
+			if (outbound(X_target, 0, width - 1) || outbound(Y_target, 0, height - 1))
+				ptr_image->setPixel(i, j, qRgb(0, 0, 0));
+			else
+				ptr_image->setPixel(i, j, img_tmp.pixel(X_target, Y_target));
 		}
 	matching_list.clear();
 }

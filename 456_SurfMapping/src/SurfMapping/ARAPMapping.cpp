@@ -85,7 +85,7 @@ void ARAPMapping::LGAdjusting(int iter_num, double diff_therod)
 	{
 		int vid = v->index();
 		v->setTexture(ut[vid][0], ut[vid][1]);
-		printf("%.2lf %.2lf\n", ut[vid][0], ut[vid][1]);
+		//printf("%.2lf %.2lf\n", ut[vid][0], ut[vid][1]);
 	}
 }
 

@@ -250,6 +250,17 @@ void MainViewerWidget::SetMpCot()
 	meshviewerwidget->SetMpCot();
 }
 
+
+void MainViewerWidget::SetMpASAP()
+{
+	meshviewerwidget->SetMpASAP();
+}
+
+void MainViewerWidget::SetMpARAP()
+{
+	meshviewerwidget->SetMpARAP();
+}
+
 void MainViewerWidget::Simulation()
 {
 	meshviewerwidget->Simulation();

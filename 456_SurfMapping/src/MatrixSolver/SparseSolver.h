@@ -18,5 +18,5 @@ private:
 	bool analyzed_Ok;
 	std::vector<T> coefficients;            // list of non-zeros coefficients
 	SpMat A;
-	SparseLU<SpMat, COLAMDOrdering<int> >   solver;
+	SimplicialCholesky<SpMat>solver;
 };

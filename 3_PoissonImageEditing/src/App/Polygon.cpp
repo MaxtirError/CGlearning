@@ -30,7 +30,7 @@ ScannerRegion CPolygon::Get_Inside()
 void CPolygon::addPoint()
 {
 	m_Polygon->append(end);
-	printf("%d %d\n", end.rx(), end.ry());
+	//printf("%d %d\n", end.rx(), end.ry());
 }
 
 void CPolygon::set_start(QPoint s)

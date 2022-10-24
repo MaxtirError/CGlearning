@@ -16,15 +16,19 @@ public:
 	{
 		MUniform,
 		MCotan,
+		MASAP,
+		MARAP
 	};
 	SurfMapping();
 	~SurfMapping();
-	virtual void SetBoundaryMode(BoundaryMode _status) {};
-	virtual void SetMappingMode(MappingMode _status) {};
+	void SetBoundaryMode(BoundaryMode _status);
+	void SetMappingMode(MappingMode _status);
 	virtual void Boundary_Mapping() {};
 	virtual void Initialize() = 0;
 	virtual void Parametrize() = 0;
 	virtual void LGAdjusting(int iter_num, double erro) {};
+	BoundaryMode bd_status;
+	MappingMode mp_status;
 protected:
 	PolyMesh* m_polymesh;
 };

@@ -25,6 +25,8 @@ private:
 	void on_triggered_act_normal();
 	void on_triggered_act_uniform();
 	void on_triggered_act_cot();
+	void on_triggered_act_asap();
+	void on_triggered_act_arap();
 
 private:
 	// File Actions.
@@ -56,6 +58,8 @@ private:
 	QAction* actSetBoundaryCircle;
 	QAction* actSetMappingUniform;
 	QAction* actSetMappingCot;
+	QAction* actSetMappingASAP;
+	QAction* actSetMappingARAP;
 	QAction* actMiniSurf;
 	QAction* actSimulation;
 

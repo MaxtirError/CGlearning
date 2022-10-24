@@ -100,13 +100,13 @@ void SurfaceMeshProcessing::CreateActions(void)
 	connect(actLighting, SIGNAL(toggled(bool)), viewer, SLOT(Lighting(bool)));
 
 	actTexture = new QAction(tr("Texture"), this);
-	actTexture->setIcon(QIcon(":/SurfaceMeshProcessing/Images/tt.png"));
+	actTexture->setIcon(QIcon(":/SurfaceMeshProcessing/Images/tt.jpg"));
 	actTexture->setStatusTip(tr("Turn texture on/off"));
 	actTexture->setCheckable(true);
 	connect(actTexture, SIGNAL(toggled(bool)), viewer, SLOT(Texture(bool)));
 
 	actMiniSurf = new QAction(tr("Minisurf"), this);
-	actMiniSurf->setIcon(QIcon(":/SurfaceMeshProcessing/Images/tt.png"));
+	actMiniSurf->setIcon(QIcon(":/SurfaceMeshProcessing/Images/minisurf.jpg"));
 	actMiniSurf->setStatusTip(tr("transform to minisurf"));
 	connect(actMiniSurf, SIGNAL(triggered()), viewer, SLOT(MiniSurf()));
 
@@ -180,8 +180,22 @@ void SurfaceMeshProcessing::CreateActions(void)
 	connect(actSetMappingCot, SIGNAL(triggered()), SLOT(on_triggered_act_cot()));
 	connect(actSetMappingCot, SIGNAL(triggered()), viewer, SLOT(SetMpCot()));
 
+
+	actSetMappingASAP = new QAction("ASAP", this);
+	actSetMappingASAP->setStatusTip(tr("set texture mapping ASAP"));
+	actSetMappingASAP->setCheckable(true);
+	connect(actSetMappingASAP, SIGNAL(triggered()), SLOT(on_triggered_act_asap()));
+	connect(actSetMappingASAP, SIGNAL(triggered()), viewer, SLOT(SetMpASAP()));
+
+
+	actSetMappingARAP = new QAction("ARAP", this);
+	actSetMappingARAP->setStatusTip(tr("set texture mapping ARAP"));
+	actSetMappingARAP->setCheckable(true);
+	connect(actSetMappingARAP, SIGNAL(triggered()), SLOT(on_triggered_act_arap()));
+	connect(actSetMappingARAP, SIGNAL(triggered()), viewer, SLOT(SetMpARAP()));
+
 	actSimulation = new QAction("Simulation", this);
-	actSimulation->setIcon(QIcon(":/SurfaceMeshProcessing/Images/boundary.png"));
+	actSimulation->setIcon(QIcon(":/SurfaceMeshProcessing/Images/simulation.jpg"));
 	actSimulation->setStatusTip(tr("start Simulation"));
 	connect(actSimulation, SIGNAL(triggered()), viewer, SLOT(Simulation()));
 
@@ -219,6 +233,8 @@ void SurfaceMeshProcessing::CreateMenus(void)
 	QMenu* menuMpMode = menuTexture->addMenu(tr("Mapping Mode"));
 	menuMpMode->addAction(actSetMappingUniform);
 	menuMpMode->addAction(actSetMappingCot);
+	menuMpMode->addAction(actSetMappingASAP);
+	menuMpMode->addAction(actSetMappingARAP);
 	menuTexture->addAction(actLoadTexture);
 
 
@@ -302,10 +318,30 @@ void SurfaceMeshProcessing::on_triggered_act_normal(void)
 
 void SurfaceMeshProcessing::on_triggered_act_uniform(void)
 {
-	actSetMappingCot->setChecked(false);
+	actSetMappingUniform->setChecked(false);
+	actSetMappingASAP->setChecked(false);
+	actSetMappingARAP->setChecked(false);
 }
 
 void SurfaceMeshProcessing::on_triggered_act_cot(void)
 {
+	actSetMappingCot->setChecked(false);
+	actSetMappingASAP->setChecked(false);
+	actSetMappingARAP->setChecked(false);
+}
+
+
+void SurfaceMeshProcessing::on_triggered_act_asap(void)
+{
+	actSetMappingCot->setChecked(false);
 	actSetMappingUniform->setChecked(false);
+	actSetMappingARAP->setChecked(false);
+}
+
+
+void SurfaceMeshProcessing::on_triggered_act_arap(void)
+{
+	actSetMappingCot->setChecked(false);
+	actSetMappingUniform->setChecked(false);
+	actSetMappingASAP->setChecked(false);
 }

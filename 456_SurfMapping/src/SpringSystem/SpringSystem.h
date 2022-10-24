@@ -6,7 +6,7 @@
 using namespace acamcad;
 using namespace polymesh;
 using namespace Eigen;
-#define SPRING_K 5000
+#define SPRING_K 10000
 #define GRAVITY 10
 #define FPS 30
 typedef SparseMatrix<double> SpMat;

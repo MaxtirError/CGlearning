@@ -48,6 +48,8 @@ protected:
 	void SetBdCircle();
 	void SetMpUniform();
 	void SetMpCot();
+	void SetMpASAP();
+	void SetMpARAP();
 	void Simulation();
 
 signals:

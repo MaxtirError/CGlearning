@@ -28,8 +28,8 @@ void XET::Insert(XET Edge)
 	p->next = new XET();
 	*p->next = Edge;
 	p->next->next = nx;
-	printf("EDGEX:%.2lf\n", Edge.x);
-	printf("EDGELX:%.2lf\n", p->x);
+	//printf("EDGEX:%.2lf\n", Edge.x);
+	//printf("EDGELX:%.2lf\n", p->x);
 }
 bool XET::CheckNext(int current_y) {
 	while (next != NULL && next->ymax <= current_y)
@@ -93,11 +93,11 @@ ScannerRegion LineScanner::Scanning() {
 		{
 			paet->Insert(*p->next);
 		}
-		for (AET* p = paet; p->next != NULL; p = p->next)
+		/*for (AET* p = paet; p->next != NULL; p = p->next)
 		{
 			printf("%d %.6lf ", current_y, p->next->x);
 		}
-		puts("");
+		puts("");*/
 		for (AET* p = paet->next; p != NULL; p = p->next->next) {
 			assert(p->next != NULL);
 			assert(p->x <= p->next->x);

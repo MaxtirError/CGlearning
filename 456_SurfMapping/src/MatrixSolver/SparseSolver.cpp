@@ -25,8 +25,7 @@ void SparseSolver::Analyze()
 {
 	A.setFromTriplets(coefficients.begin(), coefficients.end());
 
-	solver.analyzePattern(A);
-	solver.factorize(A);
+	solver.compute(A);
 	//printf("%d\n", solver.info());
 	assert(solver.info() == Eigen::Success);
 	analyzed_Ok = true;

@@ -2,7 +2,7 @@
 
 BoundarySurfMap::BoundarySurfMap(PolyMesh* _polymesh)
 {
-	bd_status = BSquare;
+	bd_status = BNormal;
 	mp_status = MUniform;
 	m_polymesh = _polymesh;
 	bd_length = 0;
@@ -204,14 +204,4 @@ void BoundarySurfMap::Parametrize()
 			//printf("mapping data:%.2lf %.2lf\n", Ans(cid, 0), Ans(cid, 1));
 		}
 	}
-}
-
-void BoundarySurfMap :: SetBoundaryMode(BoundaryMode _status)
-{
-	bd_status = _status;
-}
-
-void BoundarySurfMap::SetMappingMode(MappingMode _status)
-{
-	mp_status = _status;
 }

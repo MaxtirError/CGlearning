@@ -37,6 +37,8 @@ public:
 	void SetBdSquare();
 	void SetMpUniform();
 	void SetMpCot();
+	void SetMpASAP();
+	void SetMpARAP();
 	void Simulation();
 signals:
 	void LoadMeshOKSignal(bool, QString);
@@ -66,6 +68,8 @@ protected:
 	GLuint texture;
 	QImage texture_image; 
 	SurfMapping *MappingTool;
+	SurfMapping::MappingMode mp_status;
+	SurfMapping::BoundaryMode bd_status;
 	QTimer *timer;
 	SpringSystem *simulator;
 	std::vector<int>LockPoints;

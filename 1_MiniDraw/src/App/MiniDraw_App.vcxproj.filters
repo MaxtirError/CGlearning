@@ -114,6 +114,8 @@
     <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_Release.stamp" />
     <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_MinSizeRel.stamp" />
     <None Include="C:\Users\maxtir\Desktop\CG\USTC_CG\Homeworks\1_MiniDraw\project\src\App\MiniDraw_App_autogen\autouic_RelWithDebInfo.stamp" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="App">

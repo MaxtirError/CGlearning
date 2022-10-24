@@ -34,11 +34,13 @@ void CIDW::ImageTransfrom(QImage* ptr_image, QPoint start_pos)
 				dX_target += weight * (q.rx() + i - p.rx());
 				dY_target += weight * (q.ry() + j - p.ry());
 			}
-			auto bound = [](int x, int L, int R) {return x < L ? L : (x > R ? R : x); };
-			int X_target = bound(round(dX_target / weight_sum), 0, width - 1);
-			int Y_target = bound(round(dY_target / weight_sum), 0, height - 1);
-
-			ptr_image->setPixel(i, j, img_tmp.pixel(X_target, Y_target));
+			auto outbound = [](int x, int L, int R) {return x < L || x > R; };
+			int X_target = round(dX_target / weight_sum);
+			int Y_target = round(dY_target / weight_sum);
+			if (outbound(X_target, 0, width - 1) || outbound(Y_target, 0, height - 1))
+				ptr_image->setPixel(i, j, qRgb(0, 0, 0));
+			else
+				ptr_image->setPixel(i, j, img_tmp.pixel(X_target, Y_target));
 		}
 	matching_list.clear();
 }
